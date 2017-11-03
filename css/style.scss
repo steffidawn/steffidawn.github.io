@@ -1,3 +1,9 @@
+@mixin bg_img($url, $size, $position) {
+  background-image: url($url);
+  background-size: $size;
+  background-position: $position;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,11 +33,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.banner {
+/*.banner {
   padding: 5em 0;
   .logo {
     float: left;
-    background: #ea48eb;
+    background: #414148;
     border-radius: 100%;
     width: 75px;
     height: 75px;
@@ -40,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 1.1em;
     font-family: 'Rozha One';
+    font-weight: bold;
   }
   h1 {
     color: #414148;
@@ -49,11 +56,43 @@ h1, h2, h3, h4, h5, h6 {
     float: right;
     margin: 0;
   }
+}*/
+
+.banner {
+  padding: 5em 0;
 }
 
+.headshot {
+  border-radius: 200px;
+  height: 250px;
+  width: 250px;
+}
+
+.logo {
+  float: left;
+  background: #03A678;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  font-family: 'Rozha One';
+  font-weight: bold;
+}
+
+h1 {
+  color: #414148;
+  text-align: right;
+  font-size: 5em;
+  display: inline;
+  float: right;
+  margin: 0;
+}
 
 .work {
-  background: #414148;
+  background: #03A678;
   padding: 5em 0;
   .card {
     background: white;
@@ -64,6 +103,9 @@ h1, h2, h3, h4, h5, h6 {
   .card_full {
     width: 100%;
   }
+  .card_1 {
+    @include bg_img(, 100%, 100px, 100px);
+  }
   .card_inner {
     display: table-cell;
     vertical-align: middle;
@@ -71,6 +113,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1.5em 12%;
   }
   .green {
-    background-color: rgb(3,166,120);
+    background-color: rgba(3,166,120,.6);
   }
 }
