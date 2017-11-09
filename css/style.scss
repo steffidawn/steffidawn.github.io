@@ -1,6 +1,8 @@
 
 
-/* blue: #4286f4*/
+/* blue:
+Hex: #4286f4
+rgba: */
 
 /* purple: #aa8cc5*/
 
@@ -86,33 +88,45 @@ h1 {
   height: 450px;
   display: table;
   background-repeat: no-repeat;
-}
-
-.card_full {
   width: 100%;
   float left;
 }
 
+// .card_full {
+//   width: 100%;
+//   float left;
+// }
 
-.card_1 {
-    background-image: url('../img/wym.png');
-    size: 100%;
-}
+
+// .card_1 {
+//     background-image: url('../img/wym.png');
+//     size: 100%;
+// }
 
 .card_inner {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     width: 100%;
-    padding: 1.5em 12%;
+    padding: 5em 12%;
     font-size: 1em;
     color: white;
 
 }
 
 .green {
-    background-color: rgba(3,166,120,.6);
+    background-color: rgba(3, 166, 120, .6);
     border-radius: .35em;
+}
+
+.blue {
+  background-color: rgba(66, 134, 244, .6);
+  border-radius: .35em;
+}
+
+.pink {
+  background-color: rgba(239, 118, 103, .6);
+  border-radius: .35em;
 }
 
 h2 {
@@ -127,10 +141,10 @@ h2 {
   grid-template-columns: 1fr 1fr;
 }
 
-.box{
-  height: 450px;
-  display: block;
-  font-size: 4rem;
-  color: white;
-  position: relative;
-}
+// .box{
+//   height: 450px;
+//   display: block;
+//   font-size: 4rem;
+//   color: white;
+//   position: relative;
+// }
