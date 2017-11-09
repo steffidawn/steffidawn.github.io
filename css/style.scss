@@ -1,8 +1,10 @@
-@mixin bg_img($url, $size, $position) {
-  background-image: url($url);
-  background-size: $size;
-  background-position: $position;
-}
+
+
+/* blue: #4286f4*/
+
+/* purple: #aa8cc5*/
+
+/* pink: #ef7667 */
 
 * {
   box-sizing: border-box;
@@ -28,38 +30,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  width: 1000px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/*.banner {
-  padding: 5em 0;
-  .logo {
-    float: left;
-    background: #414148;
-    border-radius: 100%;
-    width: 75px;
-    height: 75px;
-    line-height: 75px;
-    text-align: center;
-    color: white;
-    font-size: 1.1em;
-    font-family: 'Rozha One';
-    font-weight: bold;
-  }
-  h1 {
-    color: #414148;
-    text-align: right;
-    font-size: 5em;
-    display: inline;
-    float: right;
-    margin: 0;
-  }
-}*/
-
 .banner {
-  padding: 5em 0;
+  padding: 10em 5em;
 }
 
 .headshot {
@@ -91,28 +68,69 @@ h1 {
   margin: 0;
 }
 
+.row {
+  width: 100%;
+  margin-bottom: 2em;
+  display: table;
+}
+
 .work {
-  background: #03A678;
+  background: #414148;
+  padding: 5em 5em;
+}
+
+.card {
   padding: 5em 0;
-  .card {
-    background: white;
-    border-radius: .35em;
-    height: 450px;
-    display: table;
-  }
-  .card_full {
-    width: 100%;
-  }
-  .card_1 {
-    @include bg_img(, 100%, 100px, 100px);
-  }
-  .card_inner {
+  background: white;
+  border-radius: .35em;
+  height: 450px;
+  display: table;
+  background-repeat: no-repeat;
+}
+
+.card_full {
+  width: 100%;
+  float left;
+}
+
+
+.card_1 {
+    background-image: url('../img/wym.png');
+    size: 100%;
+}
+
+.card_inner {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
+    width: 100%;
     padding: 1.5em 12%;
-  }
-  .green {
+    font-size: 1em;
+    color: white;
+
+}
+
+.green {
     background-color: rgba(3,166,120,.6);
-  }
+    border-radius: .35em;
+}
+
+h2 {
+  color: white;
+  font-size: 3em;
+  margin: 0;
+}
+
+.wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box{
+  height: 450px;
+  display: block;
+  font-size: 4rem;
+  color: white;
+  position: relative;
 }
