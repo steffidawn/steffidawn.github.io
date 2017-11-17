@@ -77,16 +77,41 @@ h1 {
 
 }
 
+.skills {
+  float: left;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 25px;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
 .work {
   background: #414148;
   padding: 5em 5em;
 }
 
 .card {
-  // padding: 5em 0;
   background: white;
   border-radius: .35em;
-  // height: 450px;
   display: table;
   background-repeat: no-repeat;
   width: 100%;
@@ -97,17 +122,6 @@ h1 {
 .contactinfo {
   margin: 40px 10px 40px 10px;
 }
-
-// .card_full {
-//   width: 100%;
-//   float left;
-// }
-
-
-// .card_1 {
-//     background-image: url('../img/wym.png');
-//     size: 100%;
-// }
 
 .card_inner {
     display: inline-block;
@@ -164,11 +178,3 @@ h2 {
   grid-auto-rows: minmax(125px, auto);
   grid-gap: .5rem;
 }
-
-// .box{
-//   height: 450px;
-//   display: block;
-//   font-size: 4rem;
-//   color: white;
-//   position: relative;
-// }
