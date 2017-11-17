@@ -1,5 +1,3 @@
-
-
 /* blue:
 Hex: #4286f4
 rgba: */
@@ -40,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner {
   padding: 10em 5em;
+  height: 700px;
 }
 
 .headshot {
@@ -83,7 +82,6 @@ h1 {
   padding: 5em 5em;
 }
 
-
 .card {
   // padding: 5em 0;
   background: white;
@@ -92,14 +90,13 @@ h1 {
   display: table;
   background-repeat: no-repeat;
   width: 100%;
+  min-height: 410px;
+  max-height: 500px;
 }
 
-
-
-
-
-
-
+.contactinfo {
+  margin: 40px 10px 40px 10px;
+}
 
 // .card_full {
 //   width: 100%;
@@ -121,6 +118,22 @@ h1 {
     font-size: 1em;
     color: white;
 
+}
+
+.babbl {
+  background-image: url('../img/babbl.png');
+}
+
+.impact {
+  background-image: url('../img/impact.png');
+  background-size: 50%;
+  text-align: right;
+
+}
+
+.wym {
+  background-image: url('../img/wym.png');
+  background-position: right;
 }
 
 .green {
